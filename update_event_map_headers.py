@@ -47,6 +47,7 @@ def update_event_map_spacegroups(pandda_dir: str):
     event_map_files = get_event_map_files(pandda_dir)
     print(f"Got {len(event_map_files)} event map files")
 
+    print(f"Updating...")
     map(update_event_map_spacegroup, event_map_files)
 
     print(f"Done!")
