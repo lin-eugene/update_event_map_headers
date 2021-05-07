@@ -9,7 +9,7 @@ class Constants:
 
 
 def get_event_map_from_dataset_dir(dataset_dir: Path):
-    event_maps = dataset_dir.glob("*.ccp4")
+    event_maps = dataset_dir.glob("*event*.ccp4")
 
     return list(event_maps)
 
@@ -50,7 +50,7 @@ def update_event_map_spacegroups(pandda_dir: str):
     print(f"Updating...")
     for event_map_file in event_map_files:
         update_event_map_spacegroup(event_map_file)
-    
+
     print(f"Done!")
 
 
