@@ -7,9 +7,9 @@ run the following code
 
 ```shell
 # Create, activate and install the dependencies in a new conda enviroment
-conda create -n update_event_map_headers
+conda create -n update_event_map_headers python=3.9
 conda activate update_event_map_headers
-conda install -c conda-forge gemmi fire
+conda install -c conda-forge gemmi=0.4.5 fire
 
 # Download the repository
 git clone https://github.com/ConorFWild/update_event_map_headers.git
